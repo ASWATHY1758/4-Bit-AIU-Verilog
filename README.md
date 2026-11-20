@@ -9,7 +9,7 @@ This repository contains the Verilog RTL design and testbench for a **4-Bit ALU*
 | `000` | Addition | `A + B` (with `CarryOut`) |
 | `001` | Subtraction | `A - B` |
 | `010` | Bitwise AND | `A & B` |
-| `011` | Bitwise OR | `A | B` |
+| `011` | Bitwise OR | `A \ B` |
 | `100` | Bitwise XOR | `A ^ B` |
 
 ## Simulation Waveform
