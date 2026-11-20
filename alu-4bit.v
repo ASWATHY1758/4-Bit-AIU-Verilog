@@ -7,13 +7,13 @@ module alu_4bit (
 );
 
 always @(*) begin
-    CarryOut = 1'b0; // Default carry 0
+    CarryOut = 1'b0; 
     case (ALU_Sel)
-        3'b000: {CarryOut, ALU_Out} = A + B;       // Addition
-        3'b001: {CarryOut, ALU_Out} = A - B;       // Subtraction
-        3'b010: ALU_Out = A & B;                   // Bitwise AND
-        3'b011: ALU_Out = A | B;                   // Bitwise OR
-        3'b100: ALU_Out = A ^ B;                   // Bitwise XOR
+        3'b000: {CarryOut, ALU_Out} = A + B;       
+        3'b001: {CarryOut, ALU_Out} = A - B;       
+        3'b010: ALU_Out = A & B;                   
+        3'b011: ALU_Out = A | B;                   
+        3'b100: ALU_Out = A ^ B;                   
         default: ALU_Out = 4'b0000;
     endcase
 end
